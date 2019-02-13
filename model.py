@@ -5,6 +5,9 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-# Write your classes here :
-class Product(Base):
-    pass
+
+class Doggo(Base):
+    __tablename__ = "photos"
+    id= Column(Integer, primary_key = True)
+    link=Column(String)
+

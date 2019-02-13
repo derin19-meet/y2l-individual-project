@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pics</title>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+	<div>
+		<a href="{{url_for('home')}}">Home</a>
+	</div>
+	{% for doggo in doggoes | reverse %}
+	<div style="margin-top: 5px">
+
+	<img src="{{doggo.link}}" alt="Error" height="200px">
+	</div>
+	{% endfor %}
+</body>
+</html>
